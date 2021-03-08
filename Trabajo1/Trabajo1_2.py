@@ -13,21 +13,29 @@ print("Este programa calcula las raices de una ecuacion cuadratica de la forma a
 a = 0;
 b = 0;
 c = 0;
+not_num = "El coeficiente no es un numero"
 
-try:
-    a = int(input("\tPor favor ingresa el coeficiente a -> "))
-except ValueError:
-    print("El coeficiente no es un numero")
+while True: # Mejorar esto
+    try:
+        a = int(input("\tPor favor ingresa el coeficiente a -> "))
+        break
+    except ValueError:
+        print(not_num)
 
-try:
-    b = int(input("\tPor favor ingresa el coeficiente b -> "))
-except ValueError:
-    print("El coeficiente no es un numero")
+while True: # Mejorar esto
+    try:
+        b = int(input("\tPor favor ingresa el coeficiente b -> "))
+        break
+    except ValueError:
+        print(not_num)
+        
+while True: # Mejorar esto
+    try:
+        c = int(input("\tPor favor ingresa el coeficiente c -> "))
+        break
+    except ValueError:
+        print(not_num)
 
-try:
-    c = int(input("\tPor favor ingresa el coeficiente c -> "))
-except ValueError:
-    print("El coeficiente no es un numero")
 
 
 discriminante = b ** 2 - (4 * a * c)

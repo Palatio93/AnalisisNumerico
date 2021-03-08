@@ -1,5 +1,8 @@
 import java.util.Scanner;
 
+/**
+ * Menu de seleccion entre 3 métodos.
+ */
 public class Trabajo1_1 {
     public static void main(String[] args) {
 
